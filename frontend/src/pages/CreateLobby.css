@@ -1,0 +1,95 @@
+/* Page background (dark theme) */
+.create-lobby-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0b0f19; /* deep dark background */
+  font-family: Arial, sans-serif;
+}
+
+/* Card */
+.create-card {
+  background: #111827; /* dark card */
+  padding: 40px;
+  border-radius: 16px;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
+  border: 1px solid #1f2937;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Title */
+.create-card h1 {
+  margin-bottom: 10px;
+  font-size: 26px;
+  color: #f9fafb;
+}
+
+/* Subtitle */
+.create-card p {
+  margin-bottom: 25px;
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* Button */
+.create-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #6366f1;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  font-weight: 500;
+}
+
+/* Hover effect */
+.create-card button:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(99, 102, 241, 0.4);
+}
+
+/* Disabled */
+.create-card button:disabled {
+  background: #374151;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Small glow accent (optional gaming feel) */
+.create-card {
+  position: relative;
+}
+
+.create-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 1px;
+  background: linear-gradient(135deg, #6366f1, transparent, #8b5cf6);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

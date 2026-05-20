@@ -1,0 +1,87 @@
+.lobby-container {
+  min-height: 100vh;
+  background: #0f0f1a;
+  color: white;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.lobby-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.lobby-header h2 {
+  font-size: 26px;
+}
+
+.lobby-header p {
+  color: #a78bfa;
+  margin-top: 5px;
+}
+
+.lobby-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1b1b2e;
+  padding: 20px;
+  border-radius: 12px;
+  width: 320px;
+  min-height: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #a78bfa;
+}
+
+.player {
+  padding: 10px;
+  margin: 6px 0;
+  background: #2a2a44;
+  border-radius: 8px;
+}
+
+.request {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 8px 0;
+  background: #2a2a44;
+  border-radius: 8px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 6px;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.accept {
+  background: #22c55e;
+  color: white;
+}
+
+.reject {
+  background: #ef4444;
+  color: white;
+}
+
+.muted {
+  color: gray;
+  font-size: 14px;
+}
